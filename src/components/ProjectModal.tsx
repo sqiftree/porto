@@ -49,7 +49,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 {project.category}
               </span>
               <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-accent/15 border border-accent/20 text-accent font-semibold">
-                {project.scrobbleMetric}
+                {project.scopeTag}
               </span>
               <span className="text-[11px] font-mono text-text-muted">
                 {project.year}

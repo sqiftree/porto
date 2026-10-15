@@ -22,7 +22,7 @@ export interface Project {
   stack: string[];
   featured: boolean;
   coverAccent: string;
-  scrobbleMetric: string;
+  scopeTag: string;
   repoUrl?: string;
   caseStudy: ProjectCaseStudy;
 }
@@ -38,7 +38,7 @@ export const projectsData: Project[] = [
     stack: ["React", "TypeScript", "MAVLink", "Leaflet", "WebSockets", "Tailwind CSS"],
     featured: true,
     coverAccent: "#0062FF",
-    scrobbleMetric: "Bengawan UV UNS",
+    scopeTag: "Bengawan UV UNS",
     repoUrl: "https://github.com/sqiftree",
     caseStudy: {
       problem:
@@ -72,7 +72,7 @@ export const projectsData: Project[] = [
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Zod"],
     featured: true,
     coverAccent: "#FF5500",
-    scrobbleMetric: "Web App Solution",
+    scopeTag: "Web App Solution",
     repoUrl: "https://github.com/sqiftree",
     caseStudy: {
       problem:
@@ -106,7 +106,7 @@ export const projectsData: Project[] = [
     stack: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "Responsive Design"],
     featured: true,
     coverAccent: "#059669",
-    scrobbleMetric: "Public Portal",
+    scopeTag: "Portal Layanan Publik",
     repoUrl: "https://github.com/sqiftree/website-desa-jetis",
     caseStudy: {
       problem:
@@ -140,7 +140,7 @@ export const projectsData: Project[] = [
     stack: ["Kotlin", "Android SDK", "Material Design", "Gradle"],
     featured: true,
     coverAccent: "#8B5CF6",
-    scrobbleMetric: "Kotlin Android",
+    scopeTag: "Kotlin Android",
     repoUrl: "https://github.com/sqiftree/HaloMBG-mobile",
     caseStudy: {
       problem:
@@ -174,7 +174,7 @@ export const projectsData: Project[] = [
     stack: ["HTML5", "CSS3", "JavaScript", "Figma", "UI/UX"],
     featured: false,
     coverAccent: "#EC4899",
-    scrobbleMetric: "UI Concept",
+    scopeTag: "Eksplorasi UI/UX",
     repoUrl: "https://github.com/sqiftree/prototype_NEOMyPertamina",
     caseStudy: {
       problem:

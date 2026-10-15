@@ -2,7 +2,6 @@
 
 - **Nama Lengkap:** Yashif Victoriawan (YashifV)
 - **GitHub Username:** [sqiftree](https://github.com/sqiftree)
-- **Last.fm Username:** [sqiftree](https://www.last.fm/user/sqiftree)
 - **LinkedIn:** [yashif-victoriawan](https://www.linkedin.com/in/yashif-victoriawan/)
 - **Instagram:** [@yashifvictoriawan](https://instagram.com/yashifvictoriawan)
 - **Email:** yashif.vkt@gmail.com

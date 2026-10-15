@@ -6,47 +6,43 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Docker](https://img.shields.io/badge/Docker-WSL2_Ready-2496ED?style=flat-square&logo=docker)](https://www.docker.com/)
-[![Last.fm](https://img.shields.io/badge/Last.fm-53k+_Scrobbles-D92323?style=flat-square&logo=last.fm)](https://www.last.fm/user/sqiftree)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
-**Personal Portfolio & Engineering Showcase inspired by Last.fm's data-driven identity system.**  
-*Crafted for Frontend Engineering, UAV Ground Control Station (GCS) telemetry, and web systems development.*
+**Personal Portfolio & Engineering Showcase of Yashif Victoriawan (@sqiftree).**  
+*Crafted for Frontend Engineering, UAV Ground Control Station (GCS) telemetry, and modern web systems.*
 
-[Live Overview](http://localhost:3000) &middot; [GitHub Profil](https://github.com/sqiftree) &middot; [LinkedIn](https://www.linkedin.com/in/yashif-victoriawan/) &middot; [Last.fm Profile](https://www.last.fm/user/sqiftree)
+[GitHub Profil](https://github.com/sqiftree) &middot; [LinkedIn](https://www.linkedin.com/in/yashif-victoriawan/) &middot; [Kirim Email](mailto:yashif.vkt@gmail.com)
 
 </div>
 
 ---
 
-## 🧭 Konsep & Desain: "Profile as an Interactive Chart"
+## 🧭 Konsep & Desain: Editorial Engineering Showcase
 
-Portofolio ini mengadopsi pendekatan visual dan struktur profil **Last.fm**, mengubah tampilan portofolio konvensional menjadi sebuah dashboard rekayasa personal yang kaya data dan otentik:
+Portofolio ini dibangun dengan pendekatan visual editorial minimalis berlatar senja berkontras tinggi (*dusk twilight*), menggabungkan ketajaman tipografi grotesque dengan tata letak editorial asimetris:
 
-* **Header Profil Sinematik:**
-  * *Dusk Twilight Sky Banner* bergradasi senja dengan ambient horizon glow halus.
-  * Avatar bulat `sqiftree` (Eren Yeager pixel art) bertumpuk memotong garis hero banner.
-  * *Top Project Widget* di pojok kanan atas banner yang memutar spotlight proyek utama (*Narash BUV GCS*).
-  * Bar statistik otentik langsung dari data riil: **53,773 Scrobbles**, **2,643 Artists**, **29 Loved Tracks**, dan **5 Projects**.
+* **Hero Banner Sinematik & Tipografi Bold:**
+  * Latar belakang lanskap senja berkabut (*misty twilight*) dengan judul tegas berbobot ekstra tebal: **`PORTOFOLIO REKAYASA`**.
+  * Dilengkapi tombol navigasi outline instan `[ KIRIM EMAIL ]` dan status identitas *S1 Informatika UNS '24 &middot; Frontend & UAV Telemetry*.
 
-* **Palet Warna Cerah & Multi-Accent Engine:**
-  * Menggunakan kanvas terang yang bersih (`#F8FAFC` slate canvas dengan kartu `#FFFFFF` putih) untuk kontras tinggi dan kenyamanan membaca.
-  * Aksen default **Electric Cobalt (`#0062FF`)** — merepresentasikan identitas teknologi kedirgantaraan, UAV, dan rekayasa perangkat lunak modern.
-  * Dilengkapi **Interactive Accent Picker (`<AccentPicker />`)** di navbar atas dengan 4 preset warna instan:
-    * ⚡ **Electric Cobalt (`#0062FF`)** — *Default: modern high-tech engineering*.
-    * 🌅 **Sunset Tangerine (`#FF5500`)** — *Warm, energetic, and punchy*.
-    * 🌿 **Cyber Emerald (`#059669`)** — *Clean, natural, and crisp telemetry*.
-    * 🔴 **Classic Garnet (`#D92338`)** — *Last.fm original red tone*.
+* **Tata Letak Asimetris Terstruktur (Editorial Grid):**
+  * **BIO:** Narasi fokus rekayasa antarmuka web, telemetri wahana nirawak, dan pengujian keandalan sistem bersanding dengan kartu foto profil pixel art otentik (@sqiftree).
+  * **PROYEK TERBARU:** Kartu lanskap utama untuk stasiun kendali darat (*Narash BUV GCS — Bengawan UV UNS*) bersanding dengan kartu vertikal aplikasi pembukuan kas UMKM (*Bingilo*).
+  * **PRINSIP REKAYASA:** Pernyataan filosofi arsitektur sistem (*"Antarmuka terbaik adalah yang bekerja tanpa membuat pengguna berpikir keras."*) bersanding dengan disiplin teknikal (MAVLink, Zod Schema, Docker).
+  * **PROYEK UNGGULAN:** Portal informasi publik (*Website Desa Jetis Karanganyar*) dan eksplorasi antarmuka seluler (*HaloMBG Kotlin Android*).
+  * **PROFIL:** Rekam jejak akademik S1 Informatika UNS, divisi wahana nirawak Bengawan UV Team, dan inventaris penguasaan tools.
+  * **HUBUNGI SAYA:** Surel langsung yang dapat disalin dengan sekali klik, tautan profil resmi GitHub dan LinkedIn, serta kartu ketersediaan magang.
 
-* **Showcase Proyek Slide & Fade (Smooth Carousel):**
-  * Modul 3-kartu sejajar (*3-card sliding window*) dengan vinyl artwork melingkar bertekstur piringan hitam konsentris.
-  * Transisi animasi slide & fade super halus menggunakan kurva cubic-bezier kustom `(0.22, 1, 0.36, 1)`.
-  * Navigasi lengkap: tombol panah samping, *expanding capsule dot indicators*, touch swipe untuk mobile, dan tombol panah keyboard (`←` / `→`).
-
-* **Sistem Tipografi Modern:**
+* **Sistem Tipografi Modern & Berkarakter:**
   * **Outfit** (`font-heading`): Tipografi geometric modern berbobot tebal untuk judul utama dan nama profil.
-  * **Space Grotesk** (`font-display`): Font teknikal berkarakter kuat untuk angka statistik, counter scrobble, dan peringkat keahlian.
-  * **Plus Jakarta Sans** (`font-sans`): Tipografi teks isi (body copy) yang sangat nyaman dibaca.
-  * **JetBrains Mono** (`font-mono`): Monospace untuk protokol MAVLink, telemetry payload, tag stack, dan cap waktu.
+  * **Space Grotesk** (`font-display`): Font teknikal berkarakter kuat untuk subjudul, metadata proyek, dan label taksonomi.
+  * **Plus Jakarta Sans** (`font-sans`): Tipografi teks isi (*body copy*) yang sangat nyaman dibaca.
+  * **JetBrains Mono** (`font-mono`): Monospace untuk protokol MAVLink, stack tag, dan kode instruksi.
+
+* **Palet Warna & Tema Gelap/Terang:**
+  * **Dark Mode (Default):** Kanvas obsidian pekat (`#0C0D12`), kartu permukaan elevasi (`#14161F`), dan aksen garnet crimson (`#D92338`).
+  * **Light Mode:** Kanvas warm slate (`#F8F9FB`) dengan kartu putih bersih (`#FFFFFF`) dan kontras teks tajam (`#0D0F14`).
+  * Tersedia tombol penggantian mode terang/gelap pada bilah navigasi atas.
 
 ---
 
@@ -142,31 +138,20 @@ porto/
 ├── agent/                  # Yashif AI Companion Agent (YCA) Framework
 │   ├── blueprint.md        # System prompt & skill modules
 │   └── context/            # Context pack profil, proyek, & pencapaian
-├── public/                 # Aset statis & favicon SVG
+├── public/                 # Aset statis (hero twilight, avatar sqiftree, favicon)
 ├── src/
 │   ├── app/
-│   │   ├── globals.css     # CSS variables, multi-accent tokens, & fade-slide keyframes
+│   │   ├── globals.css     # CSS variables, tema dark/light, & tombol outline Canva
 │   │   ├── layout.tsx      # Google Fonts (Outfit, Space Grotesk, Plus Jakarta Sans, JetBrains Mono)
-│   │   └── page.tsx        # Shell utama & interaksi tab portofolio
+│   │   └── page.tsx        # Halaman utama portofolio editorial responsif
 │   ├── components/         # Komponen UI modular
-│   │   ├── AccentPicker.tsx     # Color switcher 4 tema warna instan
-│   │   ├── ProfileHeader.tsx    # Last.fm twilight banner, avatar, & real stats
-│   │   ├── ProjectCarousel.tsx  # 3-card sliding showcase dengan transisi fade-slide halus
-│   │   ├── ProjectModal.tsx     # Modal detail case study proyek
-│   │   ├── RankedSkillList.tsx  # Peringkat keahlian proporsional Last.fm style
-│   │   ├── PhilosophySection.tsx# 3 pilar rekayasa & sound atmosphere ribbon
-│   │   ├── ActivityFeed.tsx     # Rekap aktivitas rekayasa & timeline
-│   │   ├── Sidebar.tsx          # Quick actions & profil terverifikasi
-│   │   ├── QATestingTab.tsx     # Standar verifikasi kualitas & responsivitas
-│   │   ├── ExperienceTab.tsx    # Riwayat pendidikan & organisasi
-│   │   ├── ContactTab.tsx       # Formulir kontak & kanal terhubung
-│   │   └── ThemeToggle.tsx      # Dark/Light mode toggle switch
+│   │   ├── ProjectModal.tsx     # Modal detail studi kasus proyek
+│   │   ├── ProjectCard.tsx      # Kartu proyek modular
+│   │   └── ThemeToggle.tsx      # Dark/Light mode toggle
 │   └── data/               # Single Source of Truth konten
-│       ├── projects.ts          # Metadata 5 proyek & studi kasus
-│       ├── skills.ts            # Peringkat keahlian & jam terbang
-│       ├── experience.ts        # Rekam jejak S1 Informatika & Bengawan UV
-│       ├── activity.ts          # Feed pembaruan aktivitas
-│       └── qa-report.ts         # Kriteria pengujian kualitas
+│       ├── projects.ts          # Metadata 5 proyek & studi kasus terverifikasi
+│       ├── skills.ts            # Peringkat keahlian teknis
+│       └── experience.ts        # Rekam jejak S1 Informatika & Bengawan UV
 ├── COMMANDS.md             # Cheatsheet perintah operasi Docker & WSL
 ├── Dockerfile              # Multi-stage Docker build untuk Next.js
 ├── docker-compose.yml      # Orkestrasi container dev & prod-preview
@@ -181,8 +166,9 @@ porto/
 
 * **WCAG 2.1 AA Contrast Compliance:** Seluruh teks utama dan aksen warna memenuhi rasio kontras minimal 4.5:1 untuk mode terang dan gelap.
 * **Fluid Breakpoints:** Tata letak bertransisi mulus dari layar mobile 375px hingga monitor ultrawide tanpa ada horizontal layout overflow.
-* **Keyboard Accessibility:** Modal studi kasus dapat dibuka, dinavigasi, dan ditutup menggunakan tombol keyboard (`Esc`, `Tab`, `Enter`).
-* **Performance & Core Web Vitals:** Desain ringan tanpa ketergantungan library animasi berat pihak ketiga — memanfaatkan native CSS keyframes dan CSS variables.
+* **Accessible Modal Interaction:** Modal studi kasus dapat dibuka, dinavigasi, dan ditutup menggunakan tombol keyboard (`Esc`) atau tombol tutup yang jelas.
+* **Smooth Scrolling & Anchor Navigation:** Navigasi cepat ke bagian `#bio`, `#proyek-terbaru`, `#profil`, dan `#kontak` tanpa bug tab switching.
+* **Performance & Core Web Vitals:** Desain ringan tanpa ketergantungan library animasi berat pihak ketiga.
 
 ---
 
@@ -194,7 +180,6 @@ porto/
 * **Email:** [yashif.vkt@gmail.com](mailto:yashif.vkt@gmail.com)
 * **GitHub:** [@sqiftree](https://github.com/sqiftree)
 * **LinkedIn:** [linkedin.com/in/yashif-victoriawan](https://www.linkedin.com/in/yashif-victoriawan/)
-* **Last.fm:** [last.fm/user/sqiftree](https://www.last.fm/user/sqiftree)
 
 ---
 

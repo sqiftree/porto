@@ -70,7 +70,7 @@ export function ProjectCard({ project, onSelect, index }: ProjectCardProps) {
           </div>
 
           <span className="mt-3.5 text-[11px] font-mono text-highlight bg-bg/80 px-2.5 py-0.5 rounded-full border border-border/70 backdrop-blur-sm">
-            {project.scrobbleMetric}
+            {project.scopeTag}
           </span>
         </div>
 

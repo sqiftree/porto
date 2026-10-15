@@ -2,9 +2,9 @@ export interface RankedSkill {
   rank: number;
   name: string;
   category: "Frontend & Web" | "Systems & UAV" | "QA & Testing" | "Languages & Tools";
-  percentage: number; // 0 to 100 for bar width
+  percentage: number;
   experience: string;
-  scrobbles: string;
+  level: string;
   description: string;
 }
 
@@ -15,7 +15,7 @@ export const topSkillsData: RankedSkill[] = [
     category: "Frontend & Web",
     percentage: 82,
     experience: "Fokus Utama",
-    scrobbles: "Web Projects",
+    level: "Proyek Web",
     description: "App Router, Tailwind CSS, struktur komponen modular, dan integrasi antarmuka web"
   },
   {
@@ -24,7 +24,7 @@ export const topSkillsData: RankedSkill[] = [
     category: "Frontend & Web",
     percentage: 78,
     experience: "Bahasa Harian",
-    scrobbles: "Typed Code",
+    level: "Strictly Typed",
     description: "Static typing, validasi skema form (Zod), manipulasi DOM, dan async programming"
   },
   {
@@ -33,7 +33,7 @@ export const topSkillsData: RankedSkill[] = [
     category: "Systems & UAV",
     percentage: 70,
     experience: "Bengawan UV Team",
-    scrobbles: "Narash BUV",
+    level: "Narash BUV",
     description: "Parsing paket telemetri MAVLink, visualisasi attitude instrument, dan Leaflet waypoint HUD"
   },
   {
@@ -42,7 +42,7 @@ export const topSkillsData: RankedSkill[] = [
     category: "Languages & Tools",
     percentage: 68,
     experience: "Perkuliahan & Algoritma",
-    scrobbles: "Dasar Sistem",
+    level: "Dasar Sistem",
     description: "Dasar algoritma pemrograman, struktur data, pengelolaan memori, dan logika sistem"
   },
   {
@@ -51,7 +51,7 @@ export const topSkillsData: RankedSkill[] = [
     category: "Languages & Tools",
     percentage: 74,
     experience: "Workflow Pengembangan",
-    scrobbles: "WSL & Terminal",
+    level: "WSL & Terminal",
     description: "Lingkungan WSL2, kontainerisasi Docker untuk dev lokal, serta version control Git"
   },
   {
@@ -60,7 +60,7 @@ export const topSkillsData: RankedSkill[] = [
     category: "Languages & Tools",
     percentage: 58,
     experience: "Eksplorasi Mobile",
-    scrobbles: "HaloMBG App",
+    level: "HaloMBG App",
     description: "Dasar pengembangan aplikasi Android, Activity/Fragment lifecycle, dan Material Design"
   },
   {
@@ -69,7 +69,7 @@ export const topSkillsData: RankedSkill[] = [
     category: "QA & Testing",
     percentage: 62,
     experience: "Pengujian Antarmuka",
-    scrobbles: "Manual & Form Audit",
+    level: "Manual & Form Audit",
     description: "Validasi alur input form, pengujian fungsional UI, responsive testing, dan perbaikan bug"
   },
   {
@@ -78,7 +78,7 @@ export const topSkillsData: RankedSkill[] = [
     category: "Languages & Tools",
     percentage: 60,
     experience: "Dasar Pemrograman",
-    scrobbles: "Scripting & Data",
+    level: "Scripting & Data",
     description: "Skrip otomasi sederhana, pengolahan data dasar, dan pemrograman berorientasi objek"
   }
 ];

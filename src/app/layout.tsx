@@ -34,13 +34,13 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Yashif Victoriawan (@sqiftree) — Profile as a Chart | Frontend, QA & UAV GCS",
+  title: "Yashif Victoriawan (@sqiftree) — Portofolio Rekayasa | Frontend & UAV Telemetry",
   description:
-    "Portofolio personal Yashif Victoriawan (@sqiftree). Mahasiswa S1 Informatika UNS '24, GCS & Telemetry Bengawan UV Team (KRTI 2026), Frontend Engineer, dan QA Specialist.",
+    "Portofolio rekayasa personal Yashif Victoriawan (@sqiftree). Mahasiswa S1 Informatika UNS '24, Programmer GCS di Bengawan UV Team, dan Frontend Developer.",
   keywords: [
     "Yashif Victoriawan",
     "sqiftree",
-    "Informatics UNS",
+    "Informatika UNS",
     "Bengawan UV Team",
     "Narash BUV",
     "KRTI 2026",
@@ -50,17 +50,16 @@ export const metadata: Metadata = {
     "MAVLink",
     "Next.js",
     "TypeScript",
-    "Tailwind CSS",
-    "Last.fm portfolio"
+    "Tailwind CSS"
   ],
   authors: [{ name: "Yashif Victoriawan", url: "https://github.com/sqiftree" }],
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Yashif Victoriawan (@sqiftree) — Profile as a Chart",
+    title: "Yashif Victoriawan (@sqiftree) — Portofolio Rekayasa",
     description:
-      "Data-driven personal portfolio inspired by Last.fm profile charts. Frontend, QA Automation, and UAV GCS Telemetry.",
+      "Portofolio rekayasa personal Yashif Victoriawan (@sqiftree). Mahasiswa S1 Informatika UNS '24, Programmer GCS di Bengawan UV Team, dan Frontend Developer.",
     type: "website",
     locale: "id_ID",
   },

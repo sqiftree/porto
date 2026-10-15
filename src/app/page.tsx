@@ -10,12 +10,14 @@ import {
   Check, 
   Github, 
   Linkedin, 
-  Disc, 
   ArrowUpRight, 
   ExternalLink,
   ChevronRight,
   Sun,
-  Moon
+  Moon,
+  Briefcase,
+  Terminal,
+  MapPin
 } from "lucide-react";
 
 export default function Home() {
@@ -48,7 +50,6 @@ export default function Home() {
   const bingilo = projectsData.find((p) => p.id === "bingilo-ledger") || projectsData[1];
   const desaJetis = projectsData.find((p) => p.id === "website-desa-jetis") || projectsData[2];
   const haloMBG = projectsData.find((p) => p.id === "halombg-mobile") || projectsData[3];
-  const neoMyPertamina = projectsData.find((p) => p.id === "prototype-neomypertamina") || projectsData[4];
 
   return (
     <div className="min-h-screen bg-bg text-text transition-colors">
@@ -153,7 +154,7 @@ export default function Home() {
             <div className="pt-2 flex flex-wrap gap-2 text-xs font-mono text-muted">
               <span className="px-3 py-1 rounded bg-surface border border-border">Surakarta, Indonesia</span>
               <span className="px-3 py-1 rounded bg-surface border border-border">Bengawan UV UNS</span>
-              <span className="px-3 py-1 rounded bg-surface border border-border text-accent font-semibold">53k+ Scrobbles di Last.fm</span>
+              <span className="px-3 py-1 rounded bg-surface border border-border text-accent font-semibold">Frontend &amp; UAV Telemetry</span>
             </div>
           </div>
 
@@ -196,13 +197,13 @@ export default function Home() {
                 </a>
                 <span className="text-border">&middot;</span>
                 <a
-                  href="https://www.last.fm/user/sqiftree"
+                  href="https://www.linkedin.com/in/yashif-victoriawan/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent hover:underline inline-flex items-center gap-1"
+                  className="text-muted hover:text-text transition-colors inline-flex items-center gap-1"
                 >
-                  <Disc className="w-3.5 h-3.5" />
-                  <span>Last.fm</span>
+                  <Linkedin className="w-3.5 h-3.5" />
+                  <span>LinkedIn</span>
                 </a>
               </div>
             </div>
@@ -571,49 +572,37 @@ export default function Home() {
                     <Linkedin className="w-3.5 h-3.5" />
                     <span>LinkedIn</span>
                   </a>
-
-                  <a
-                    href="https://www.last.fm/user/sqiftree"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface border border-border text-accent hover:border-accent transition-colors font-semibold"
-                  >
-                    <Disc className="w-3.5 h-3.5" />
-                    <span>Last.fm (53k+)</span>
-                  </a>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Visual Card */}
+          {/* Right Column: Visual Card - Status & Kolaborasi */}
           <div className="md:col-span-5">
-            <div className="rounded-2xl bg-gradient-to-tr from-[#1A0C0E] via-[#2A1015] to-[#14080A] border border-border/80 p-8 space-y-4 text-center">
+            <div className="rounded-2xl bg-gradient-to-tr from-[#1A1012] via-[#241316] to-[#120B0D] border border-border/80 p-8 space-y-4 text-center">
               <div className="w-12 h-12 rounded-full bg-accent/20 border border-accent/40 text-accent flex items-center justify-center mx-auto">
-                <Disc className="w-6 h-6 animate-spin-slow" />
+                <Briefcase className="w-6 h-6" />
               </div>
 
               <div className="space-y-1">
                 <span className="text-[10px] font-mono uppercase tracking-widest text-accent font-bold">
-                  Sound Identity
+                  Status Ketersediaan
                 </span>
                 <h4 className="font-heading font-bold text-lg text-white">
-                  Heavy Rotation di Last.fm
+                  Terbuka untuk Magang
                 </h4>
               </div>
 
               <p className="text-xs text-white/70 font-sans leading-relaxed max-w-xs mx-auto">
-                Tame Impala &middot; Daft Punk &middot; Radiohead &middot; Hindia &middot; King Krule &middot; 53,773 Scrobbles
+                Mahasiswa aktif Informatika UNS siap berkontribusi pada pengembangan Frontend Web, Quality Assurance (QA), dan integrasi telemetri perangkat lunak.
               </p>
 
               <div className="pt-2">
                 <a
-                  href="https://www.last.fm/user/sqiftree"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="canva-outline-btn text-[11px] py-2 px-4"
+                  href="mailto:yashif.vkt@gmail.com"
+                  className="canva-outline-btn text-[11px] py-2 px-5"
                 >
-                  LIHAT PROFIL LAST.FM
+                  KIRIM SUREL SEKARANG
                 </a>
               </div>
             </div>
