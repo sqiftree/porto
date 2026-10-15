@@ -6,12 +6,13 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Docker](https://img.shields.io/badge/Docker-WSL2_Ready-2496ED?style=flat-square&logo=docker)](https://www.docker.com/)
+[![Instagram](https://img.shields.io/badge/Instagram-@yashifvictoriawan-E4405F?style=flat-square&logo=instagram)](https://instagram.com/yashifvictoriawan)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 **Personal Portfolio & Engineering Showcase of Yashif Victoriawan (@sqiftree).**  
 *Crafted for Frontend Engineering, UAV Ground Control Station (GCS) telemetry, and modern web systems.*
 
-[GitHub Profil](https://github.com/sqiftree) &middot; [LinkedIn](https://www.linkedin.com/in/yashif-victoriawan/) &middot; [Kirim Email](mailto:yashif.vkt@gmail.com)
+[GitHub Profil](https://github.com/sqiftree) &middot; [LinkedIn](https://www.linkedin.com/in/yashif-victoriawan/) &middot; [Instagram](https://instagram.com/yashifvictoriawan) &middot; [Kirim Email](mailto:yashif.vkt@gmail.com)
 
 </div>
 
@@ -180,6 +181,7 @@ porto/
 * **Email:** [yashif.vkt@gmail.com](mailto:yashif.vkt@gmail.com)
 * **GitHub:** [@sqiftree](https://github.com/sqiftree)
 * **LinkedIn:** [linkedin.com/in/yashif-victoriawan](https://www.linkedin.com/in/yashif-victoriawan/)
+* **Instagram:** [@yashifvictoriawan](https://instagram.com/yashifvictoriawan)
 
 ---
 

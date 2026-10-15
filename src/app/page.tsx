@@ -10,6 +10,7 @@ import {
   Check, 
   Github, 
   Linkedin, 
+  Instagram,
   ArrowUpRight, 
   ExternalLink,
   ChevronRight,
@@ -54,9 +55,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-bg text-text transition-colors">
       {/* 1. Minimal Top Navigation */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-bg/85 backdrop-blur-md border-b border-border/60">
+      <header className="fixed top-0 left-0 right-0 z-40 bg-bg/90 backdrop-blur-md border-b border-border transition-colors">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 h-14 flex items-center justify-between">
-          <a href="#" className="font-heading font-black text-sm tracking-tight uppercase hover:text-accent transition-colors flex items-center gap-2">
+          <a href="#" className="font-heading font-black text-sm tracking-tight uppercase hover:text-accent transition-colors flex items-center gap-2 text-text">
             <span className="w-2 h-2 rounded-full bg-accent" />
             <span>sqiftree</span>
           </a>
@@ -77,8 +78,9 @@ export default function Home() {
             <button
               onClick={toggleTheme}
               type="button"
-              className="p-1.5 rounded-md border border-border/80 hover:border-accent text-muted hover:text-accent transition-colors"
+              className="p-1.5 rounded-md border border-border hover:border-accent text-text hover:text-accent transition-colors"
               title="Ganti Mode Terang / Gelap"
+              aria-label="Toggle theme"
             >
               {isLight ? <Moon className="w-3.5 h-3.5" /> : <Sun className="w-3.5 h-3.5" />}
             </button>
@@ -86,36 +88,36 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 2. Hero Section (Exact Canva Header: Bold Headline Over Scenic Dusk Visual) */}
+      {/* 2. Hero Section (Canva Header: Bold Headline Over Cinematic Anime Scenery Backdrop) */}
       <section className="relative min-h-[85vh] sm:min-h-[90vh] flex flex-col justify-between pt-24 pb-8 px-4 sm:px-8 overflow-hidden border-b border-border">
-        {/* Full-bleed visual backdrop */}
+        {/* Full-bleed visual backdrop with permanent contrast scrim for both light and dark mode */}
         <div className="absolute inset-0 -z-10">
           <img
-            src="/hero-twilight.jpg"
-            alt="Misty twilight landscape"
+            src="/hero-eren-twilight.jpg"
+            alt="Eren Yeager twilight anime landscape"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/50 to-bg/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/30 dark:from-bg dark:via-bg/60 dark:to-bg/30" />
         </div>
 
         {/* Top spacer */}
         <div className="w-full max-w-5xl mx-auto" />
 
-        {/* Big Canva-style typography */}
+        {/* Big Canva-style typography - crisp white over cinematic backdrop */}
         <div className="w-full max-w-5xl mx-auto py-12">
           <div className="space-y-4">
-            <span className="text-xs font-mono tracking-widest uppercase text-accent font-bold block">
+            <span className="text-xs font-mono tracking-widest uppercase text-accent font-bold block drop-shadow-sm">
               S1 Informatika UNS &middot; Angkatan 2024
             </span>
 
-            <h1 className="font-heading font-black text-5xl sm:text-7xl lg:text-8xl tracking-tighter uppercase text-white leading-[0.95]">
+            <h1 className="font-heading font-black text-5xl sm:text-7xl lg:text-8xl tracking-tighter uppercase text-white leading-[0.95] drop-shadow-md">
               Portofolio<br />Rekayasa
             </h1>
           </div>
         </div>
 
         {/* Bottom Hero Ribbon matching Canva footer bar */}
-        <div className="w-full max-w-5xl mx-auto pt-6 border-t border-white/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-white/80 uppercase tracking-widest">
+        <div className="w-full max-w-5xl mx-auto pt-6 border-t border-white/25 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-white/90 uppercase tracking-widest">
           <div>
             <span className="font-bold text-white">Yashif Victoriawan</span>
             <span className="text-white/40 mx-2">&middot;</span>
@@ -151,9 +153,9 @@ export default function Home() {
               Aktif sebagai anggota Bengawan UV Team (wahana Narash BUV) dalam pengembangan stasiun kendali darat (GCS) berbasis web dan integrasi telemetri MAVLink. Terbiasa memadukan ketelitian logika sistem dengan antarmuka yang bersih, responsif, dan mudah dipahami pengguna.
             </p>
 
-            <div className="pt-2 flex flex-wrap gap-2 text-xs font-mono text-muted">
-              <span className="px-3 py-1 rounded bg-surface border border-border">Surakarta, Indonesia</span>
-              <span className="px-3 py-1 rounded bg-surface border border-border">Bengawan UV UNS</span>
+            <div className="pt-2 flex flex-wrap gap-2 text-xs font-mono">
+              <span className="px-3 py-1 rounded bg-surface border border-border text-text">Surakarta, Indonesia</span>
+              <span className="px-3 py-1 rounded bg-surface border border-border text-text">Bengawan UV UNS</span>
               <span className="px-3 py-1 rounded bg-surface border border-border text-accent font-semibold">Frontend &amp; UAV Telemetry</span>
             </div>
           </div>
@@ -163,34 +165,39 @@ export default function Home() {
             <div className="minimal-card rounded-2xl p-6 sm:p-8 bg-surface text-left space-y-4 relative overflow-hidden">
               <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-bg border border-border overflow-hidden shadow-md">
                 <img
-                  src="https://avatars.githubusercontent.com/u/244948029?v=4"
-                  alt="Yashif Victoriawan avatar"
+                  src="/eren-avatar.jpg"
+                  alt="Eren Yeager / sqiftree avatar"
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    e.currentTarget.style.display = "none";
+                    e.currentTarget.src = "https://avatars.githubusercontent.com/u/244948029?v=4";
                   }}
                 />
               </div>
 
               <div className="space-y-1">
-                <h3 className="font-heading font-bold text-lg text-text">
-                  Yashif Victoriawan
-                </h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-heading font-bold text-lg text-text">
+                    Yashif Victoriawan
+                  </h3>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-accent/15 border border-accent/30 text-accent font-semibold">
+                    @sqiftree
+                  </span>
+                </div>
                 <p className="text-xs font-mono text-muted">
-                  @sqiftree &middot; S1 Informatika &apos;24
+                  S1 Informatika UNS &middot; Angkatan 2024
                 </p>
               </div>
 
-              <p className="text-xs font-sans text-muted leading-relaxed pt-2 border-t border-border/60">
+              <p className="text-xs font-sans text-muted leading-relaxed pt-2 border-t border-border">
                 Terbuka untuk kesempatan magang mahasiswa di bidang Frontend Web Development, Quality Assurance (QA), dan integrasi telemetri UAV GCS.
               </p>
 
-              <div className="pt-2 flex items-center gap-3 text-xs font-mono">
+              <div className="pt-2 flex flex-wrap items-center gap-2.5 text-xs font-mono">
                 <a
                   href="https://github.com/sqiftree"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted hover:text-text transition-colors inline-flex items-center gap-1"
+                  className="text-muted hover:text-accent transition-colors inline-flex items-center gap-1 font-medium"
                 >
                   <Github className="w-3.5 h-3.5" />
                   <span>GitHub</span>
@@ -200,10 +207,20 @@ export default function Home() {
                   href="https://www.linkedin.com/in/yashif-victoriawan/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted hover:text-text transition-colors inline-flex items-center gap-1"
+                  className="text-muted hover:text-accent transition-colors inline-flex items-center gap-1 font-medium"
                 >
                   <Linkedin className="w-3.5 h-3.5" />
                   <span>LinkedIn</span>
+                </a>
+                <span className="text-border">&middot;</span>
+                <a
+                  href="https://instagram.com/yashifvictoriawan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted hover:text-accent transition-colors inline-flex items-center gap-1 font-medium"
+                >
+                  <Instagram className="w-3.5 h-3.5" />
+                  <span>Instagram</span>
                 </a>
               </div>
             </div>
@@ -567,10 +584,20 @@ export default function Home() {
                     href="https://www.linkedin.com/in/yashif-victoriawan/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface border border-border hover:border-accent hover:text-accent transition-colors"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface border border-border hover:border-accent hover:text-accent transition-colors text-text"
                   >
                     <Linkedin className="w-3.5 h-3.5" />
                     <span>LinkedIn</span>
+                  </a>
+
+                  <a
+                    href="https://instagram.com/yashifvictoriawan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface border border-border hover:border-accent hover:text-accent transition-colors text-text"
+                  >
+                    <Instagram className="w-3.5 h-3.5" />
+                    <span>Instagram</span>
                   </a>
                 </div>
               </div>

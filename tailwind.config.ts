@@ -21,6 +21,7 @@ const config: Config = {
           DEFAULT: "var(--text)",
           muted: "var(--muted)",
         },
+        muted: "var(--muted)",
         accent: {
           DEFAULT: "var(--accent)",
           hover: "var(--accent-hover)",
