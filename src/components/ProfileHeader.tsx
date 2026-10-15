@@ -140,11 +140,11 @@ export function ProfileHeader({ onContactClick, onOpenTopProject }: ProfileHeade
             </a>
 
             <span className="hidden lg:inline-flex items-center px-2 py-1 rounded-md bg-bg border border-border text-[11px] text-text-muted">
-              Pull Shark x2 &middot; KRTI Juara 1
+              Informatika UNS &middot; Bengawan UV
             </span>
           </div>
 
-          {/* Real Stats Row from Last.fm + GitHub */}
+          {/* Real Stats Row directly from Last.fm screenshot + Projects */}
           <div className="flex flex-wrap items-center justify-between sm:justify-end gap-5 sm:gap-7 text-left">
             <div>
               <span className="text-[10px] font-mono uppercase tracking-wider text-text-muted block">
@@ -166,28 +166,19 @@ export function ProfileHeader({ onContactClick, onOpenTopProject }: ProfileHeade
 
             <div>
               <span className="text-[10px] font-mono uppercase tracking-wider text-text-muted block">
+                Loved Tracks
+              </span>
+              <span className="text-xl sm:text-2xl font-bold font-mono text-accent tabular-nums tracking-tight">
+                29
+              </span>
+            </div>
+
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-wider text-text-muted block">
                 Projects
               </span>
               <span className="text-xl sm:text-2xl font-bold font-mono text-text tabular-nums tracking-tight">
                 5
-              </span>
-            </div>
-
-            <div>
-              <span className="text-[10px] font-mono uppercase tracking-wider text-text-muted block">
-                Commits
-              </span>
-              <span className="text-xl sm:text-2xl font-bold font-mono text-text tabular-nums tracking-tight">
-                420+
-              </span>
-            </div>
-
-            <div>
-              <span className="text-[10px] font-mono uppercase tracking-wider text-text-muted block">
-                QA Pass
-              </span>
-              <span className="text-xl sm:text-2xl font-bold font-mono text-emerald-600 tabular-nums tracking-tight">
-                100%
               </span>
             </div>
 

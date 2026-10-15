@@ -74,7 +74,7 @@ export function Sidebar({ onContactClick, onTabChange }: SidebarProps) {
               </div>
               <span className="font-semibold text-xs">Audit QA &amp; Testing</span>
             </div>
-            <span className="text-[11px] text-emerald-600 font-bold">100% Pass</span>
+            <span className="text-[11px] text-emerald-600 font-medium">Checklist</span>
           </button>
 
           <button
@@ -102,7 +102,7 @@ export function Sidebar({ onContactClick, onTabChange }: SidebarProps) {
           </span>
         </div>
         <p className="text-xs text-text leading-relaxed font-medium">
-          Mahasiswa Informatika UNS &middot; Aktif di Bengawan UV Team (KRTI 2026) &middot; Terbuka untuk Magang (Frontend / QA / UAV GCS).
+          Mahasiswa Informatika UNS &middot; Aktif di Bengawan UV Team &middot; Terbuka untuk Magang &amp; Kolaborasi Rekayasa Web.
         </p>
         <span className="inline-block text-[10px] font-mono text-highlight bg-bg px-2 py-0.5 rounded border border-border">
           Surakarta &amp; Remote Available
