@@ -72,19 +72,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className="light" suppressHydrationWarning>
+    <html lang="id" className="dark" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               try {
                 const savedTheme = localStorage.getItem('yashif-theme');
-                if (savedTheme === 'dark') {
-                  document.documentElement.classList.add('dark');
-                  document.documentElement.classList.remove('light');
-                } else {
+                if (savedTheme === 'light') {
                   document.documentElement.classList.add('light');
                   document.documentElement.classList.remove('dark');
+                } else {
+                  document.documentElement.classList.add('dark');
+                  document.documentElement.classList.remove('light');
                 }
 
                 const savedAccent = localStorage.getItem('yashif-accent');

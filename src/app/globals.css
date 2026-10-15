@@ -3,7 +3,30 @@
 @tailwind utilities;
 
 :root {
-  /* Default Bright Theme: Crisp Alabaster White + Electric Cobalt Accent + Pure White Cards */
+  /* Last.fm Dark Mood (Default): Deep Velvet Obsidian + Crimson Accent + Crisp Typography */
+  --bg: #0C0D12;
+  --surface: #14161F;
+  --surface-hover: #1C1E2B;
+  --surface-active: #242738;
+  --border: #232736;
+  --border-subtle: #191B26;
+  --text: #F8FAFC;
+  --muted: #94A3B8;
+  
+  /* Last.fm Iconic Crimson Red Accent */
+  --accent: #D92338;
+  --accent-hover: #E8293F;
+  --accent-subtle: rgba(217, 35, 56, 0.12);
+  --accent-glow: rgba(217, 35, 56, 0.30);
+  
+  /* Secondary Warm Amber Highlight */
+  --highlight: #FF5500;
+  --highlight-subtle: rgba(255, 85, 0, 0.12);
+  --success: #10B981;
+}
+
+html.light {
+  /* Clean Light Canvas Option */
   --bg: #F8FAFC;
   --surface: #FFFFFF;
   --surface-hover: #F1F5F9;
@@ -12,65 +35,17 @@
   --border-subtle: #F1F5F9;
   --text: #0F172A;
   --muted: #64748B;
-  
-  /* Primary Bright Accent: Electric Cobalt / Modern Aerospace Blue */
-  --accent: #0062FF;
-  --accent-hover: #0050D4;
-  --accent-subtle: rgba(0, 98, 255, 0.08);
-  --accent-glow: rgba(0, 98, 255, 0.20);
-  
-  /* Highlight Tone: Luminous Amber / Warm Gold */
-  --highlight: #F59E0B;
-  --highlight-subtle: rgba(245, 158, 11, 0.10);
-  --success: #10B981;
-}
-
-/* User-Selectable Accent Colorways */
-html[data-accent="cobalt"] {
-  --accent: #0062FF;
-  --accent-hover: #0050D4;
-  --accent-subtle: rgba(0, 98, 255, 0.09);
-  --accent-glow: rgba(0, 98, 255, 0.22);
-}
-
-html[data-accent="sunset"] {
-  --accent: #FF5500;
-  --accent-hover: #E04800;
-  --accent-subtle: rgba(255, 85, 0, 0.09);
-  --accent-glow: rgba(255, 85, 0, 0.22);
-}
-
-html[data-accent="emerald"] {
-  --accent: #059669;
-  --accent-hover: #047857;
-  --accent-subtle: rgba(5, 150, 105, 0.09);
-  --accent-glow: rgba(5, 150, 105, 0.22);
-}
-
-html[data-accent="crimson"] {
   --accent: #D92338;
-  --accent-hover: #BA162A;
-  --accent-subtle: rgba(217, 35, 56, 0.09);
-  --accent-glow: rgba(217, 35, 56, 0.22);
+  --accent-hover: #B8182B;
+  --accent-subtle: rgba(217, 35, 56, 0.08);
+  --accent-glow: rgba(217, 35, 56, 0.20);
+  --highlight: #EA580C;
+  --highlight-subtle: rgba(234, 88, 12, 0.10);
+  --success: #059669;
 }
 
-html.dark {
-  /* Dark Theme: Velvet Obsidian + Luminous Neon Accent */
-  --bg: #0C0E14;
-  --surface: #141721;
-  --surface-hover: #1C202E;
-  --surface-active: #24293B;
-  --border: #232838;
-  --border-subtle: #181B26;
-  --text: #F8FAFC;
-  --muted: #94A3B8;
-  --accent: #38BDF8;
-  --accent-hover: #0EA5E9;
-  --accent-subtle: rgba(56, 189, 248, 0.12);
-  --accent-glow: rgba(56, 189, 248, 0.26);
-  --highlight: #FBBF24;
-  --highlight-subtle: rgba(251, 191, 36, 0.12);
-  --success: #34D399;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -78,107 +53,58 @@ body {
   color: var(--text);
   font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   min-height: 100vh;
-  transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Tabular figures for numbers */
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
 
-/* Micro-interaction for Last.fm card hover */
-.lastfm-card {
+/* Elegant minimalist card */
+.minimal-card {
   background-color: var(--surface);
   border: 1px solid var(--border);
-  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
               border-color 0.2s ease,
               box-shadow 0.25s ease;
-  position: relative;
 }
 
-.lastfm-card:hover {
+.minimal-card:hover {
+  border-color: rgba(217, 35, 56, 0.4);
   transform: translateY(-2px);
-  border-color: var(--accent);
-  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.07),
-              0 0 12px -2px var(--accent-subtle);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
-html.dark .lastfm-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 10px 28px -10px rgba(0, 0, 0, 0.55),
-              0 0 14px -2px var(--accent-subtle);
+/* Outline CTA button inspired by user's Canva design */
+.canva-outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Smooth Soft Fade-Slide Keyframes */
-@keyframes softSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.canva-outline-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(217, 35, 56, 0.3);
 }
 
-@keyframes softFadeSlideNext {
-  0% {
-    opacity: 0;
-    transform: translateX(20px) scale(0.985);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-}
-
-@keyframes softFadeSlidePrev {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px) scale(0.985);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-}
-
-.animate-soft-slide {
-  animation: softSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-fade-slide-next {
-  animation: softFadeSlideNext 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.animate-fade-slide-prev {
-  animation: softFadeSlidePrev 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-/* Equalizer Bars */
-.eq-bar {
-  background-color: var(--accent);
-  width: 3px;
-  border-radius: 2px;
-  transform-origin: bottom;
-  box-shadow: 0 0 6px var(--accent-subtle);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .eq-bar,
-  .animate-eq-1,
-  .animate-eq-2,
-  .animate-eq-3,
-  .animate-eq-4,
-  .animate-pulse-subtle {
-    animation: none !important;
-  }
-}
-
-/* Custom scrollbars */
+/* Custom subtle scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -194,5 +120,5 @@ html.dark .lastfm-card:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--muted);
+  background: var(--accent);
 }
