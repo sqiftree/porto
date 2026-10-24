@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steel Ball Run — The Grand Race</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-brand"><span class="brand-star">☆</span> SBR</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#riders">Riders</a></li>
+      <li><a href="#stands">Stands</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">☰</div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="dust-particles" id="dustParticles"></div>
+    <div class="hero-content">
+      <p class="hero-sub">— 1890 · The Grand Race —</p>
+      <h1 class="hero-title">STEEL<br/><span>BALL</span><br/>RUN</h1>
+      <p class="hero-desc">
+        Lintasan dari San Diego menuju New York City. 6.000 mil perjalanan penuh ambisi.
+        Satu pemenang, satu kebenaran, dan satu takdir yang menanti.
+      </p>
+      <a href="#about" class="btn-hero">MULAI PERJALANAN ➤</a>
+    </div>
+    <div class="hero-decor">
+      <div class="spinning-ball" id="spinBall">✦</div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="section-label">BAGIAN 07</div>
+    <h2 class="section-title">The Race of the Century</h2>
+    <div class="about-grid">
+
+      <div class="about-text fade-in">
+        <p>
+          Steel Ball Run mengisahkan kompetisi balap kuda lintas benua Amerika yang diprakarsai oleh
+          <strong>President Funny Valentine</strong>. Di balik hadiah besar, terdapat agenda rahasia
+          untuk mengumpulkan relik suci demi kejayaan kedaulatan negara.
+        </p>
+        <p>
+          Dua tokoh utama, <strong>Johnny Joestar</strong> dan <strong>Gyro Zeppeli</strong>, menjalin
+          aliansi untuk menghadapi berbagai rintangan supranatural dalam perjalanan yang melampaui
+          batas kecepatan fisik.
+        </p>
+        <div class="fact-pills">
+          <span class="pill">6.000 Mil</span>
+          <span class="pill">50 Juta USD</span>
+          <span class="pill">Tahun 1890</span>
+          <span class="pill">95 Bab Cerita</span>
+        </div>
+      </div>
+
+      <div class="about-visual fade-in">
+        <div class="route-visual">
+          <div class="route-step">
+            <div class="step-dot"></div>
+            <div class="step-info">
+              <span class="step-label">START</span>
+              <span class="step-city">San Diego</span>
+            </div>
+          </div>
+          <div class="route-line"></div>
+          <div class="route-step">
+            <div class="step-dot"></div>
+            <div class="step-info">
+              <span class="step-label">CHECKPOINT</span>
+              <span class="step-city">Monument Valley</span>
+            </div>
+          </div>
+          <div class="route-line"></div>
+          <div class="route-step">
+            <div class="step-dot"></div>
+            <div class="step-info">
+              <span class="step-label">FINISH</span>
+              <span class="step-city">New York</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RIDERS SECTION -->
+  <section id="riders">
+    <div class="section-label">DAFTAR PESERTA</div>
+    <h2 class="section-title">Character Spotlight</h2>
+
+    <div class="filter-controls">
+      <input type="text" id="riderSearch" placeholder="Cari nama peserta..." />
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">SEMUA</button>
+        <button class="filter-btn" data-filter="hero">PROTAGONIS</button>
+        <button class="filter-btn" data-filter="villain">ANTAGONIS</button>
+      </div>
+    </div>
+
+    <div class="riders-grid" id="ridersGrid">
+
+      <div class="rider-card fade-in" data-category="hero" data-name="johnny joestar">
+        <div class="card-badge">PROTAGONIS</div>
+        <h3>Johnny Joestar</h3>
+        <p class="card-role">Main Protagonist</p>
+        <p class="card-desc">Mantan joki berbakat yang mencari cara untuk memulihkan kakinya melalui rahasia teknik Spin.</p>
+        <div class="card-stats">
+          <span><strong>Kuda:</strong> Slow Dancer</span>
+          <span><strong>Asal:</strong> Amerika Serikat</span>
+        </div>
+      </div>
+
+      <div class="rider-card fade-in" data-category="hero" data-name="gyro zeppeli">
+        <div class="card-badge">PROTAGONIS</div>
+        <h3>Gyro Zeppeli</h3>
+        <p class="card-role">Deuteragonist</p>
+        <p class="card-desc">Algojo dari Kerajaan Napoli yang menguasai teknik bola baja dengan presisi luar biasa.</p>
+        <div class="card-stats">
+          <span><strong>Kuda:</strong> Valkyrie</span>
+          <span><strong>Asal:</strong> Napoli</span>
+        </div>
+      </div>
+
+      <div class="rider-card fade-in" data-category="villain" data-name="funny valentine">
+        <div class="card-badge">ANTAGONIS</div>
+        <h3>Funny Valentine</h3>
+        <p class="card-role">Main Antagonist</p>
+        <p class="card-desc">Presiden Amerika Serikat ke-23 yang berambisi mengumpulkan Corpse Parts demi negaranya.</p>
+        <div class="card-stats">
+          <span><strong>Stand:</strong> D4C (Dirty Deeds Done Dirt Cheap)</span>
+          <span><strong>Asal:</strong> Amerika Serikat</span>
+        </div>
+      </div>
+
+      <div class="rider-card fade-in" data-category="villain" data-name="diego brando">
+        <div class="card-badge">ANTAGONIS</div>
+        <h3>Diego Brando</h3>
+        <p class="card-role">Rival Antagonist</p>
+        <p class="card-desc">Joki legendaris asal Inggris yang mampu bertransformasi menjadi dinosaurus predator.</p>
+        <div class="card-stats">
+          <span><strong>Kuda:</strong> Silver Bullet</span>
+          <span><strong>Asal:</strong> Inggris</span>
+        </div>
+      </div>
+
+    </div>
+    <p class="no-results" id="noResults" style="display:none;">Peserta tidak ditemukan.</p>
+  </section>
+
+  <!-- STANDS SECTION -->
+  <section id="stands">
+    <div class="section-label">KEMAMPUAN KHUSUS</div>
+    <h2 class="section-title">Stand Spotlight</h2>
+    <div class="stands-accordion">
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          TUSK — Johnny Joestar <span class="accordion-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          <p>Memanfaatkan energi rotasi tak terbatas dari teknik Spin. Johnny mampu meluncurkan kuku sebagai proyektil mematikan yang dapat menembus dimensi pertahanan apapun.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          BALL BREAKER — Gyro Zeppeli <span class="accordion-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          <p>Manifestasi dari Spin sempurna menggunakan bola baja. Stand ini mampu melampaui batas fisik dan menyebabkan penuaan instan pada sel tubuh lawan.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          D4C (Dirty Deeds Done Dirt Cheap) — Funny Valentine <span class="accordion-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          <p>Memungkinkan pengguna untuk berpindah antar dimensi paralel secara instan. Valentine dapat menarik versi dirinya dari dimensi lain untuk bertarung bersamanya.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          SCARY MONSTERS — Diego Brando <span class="accordion-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          <p>Memberikan kemampuan untuk mengubah diri sendiri dan makhluk hidup lainnya menjadi dinosaurus. Diego mendapatkan kecepatan, kekuatan, dan insting predator yang tajam.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          CREAM STARTER — Hot Pants <span class="accordion-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          <p>Stand berbentuk botol semprot yang dapat memanipulasi daging manusia. Dapat digunakan untuk menyembuhkan luka atau menyerang dengan melelehkan struktur tubuh lawan.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          MANDOM — Ringo Roadagain <span class="accordion-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          <p>Kemampuan untuk memutar balik waktu tepat enam detik. Stand ini memaksa lawan untuk masuk ke dalam pertarungan psikologis yang sangat intens.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-title">STEEL BALL RUN</p>
+      <p class="footer-sub">JoJo's Bizarre Adventure — Part 7 · Hirohiko Araki</p>
+      <hr class="footer-divider" />
+      <p class="footer-note">Yashif Victoriawan &nbsp;·&nbsp; PPW 02 Kelas A &nbsp;·&nbsp; L0124124</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -27,8 +27,9 @@ export function ActivityFeed() {
         </div>
 
         <div className="flex items-center gap-2 text-xs font-mono text-text-muted">
-          <span className="hidden sm:inline">Feed Sinkron GitHub</span>
-          <Settings2 className="w-4 h-4 hover:text-accent cursor-pointer transition-colors" title="Pengaturan tampilan feed" />
+          <span title="Pengaturan tampilan feed">
+            <Settings2 className="w-4 h-4 hover:text-accent cursor-pointer transition-colors" />
+          </span>
         </div>
       </div>
 

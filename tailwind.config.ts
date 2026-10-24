@@ -10,67 +10,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "var(--bg)",
-        surface: {
-          DEFAULT: "var(--surface)",
-          hover: "var(--surface-hover)",
-          active: "var(--surface-active)",
+        bg: "var(--clr-bg)",
+        black: "var(--clr-black)",
+        surface: "var(--clr-surface)",
+        gold: {
+          DEFAULT: "var(--clr-gold)",
+          light: "var(--clr-gold-light)",
         },
-        border: "var(--border)",
-        text: {
-          DEFAULT: "var(--text)",
-          muted: "var(--muted)",
-        },
-        muted: "var(--muted)",
-        accent: {
-          DEFAULT: "var(--accent)",
-          hover: "var(--accent-hover)",
-          subtle: "var(--accent-subtle)",
-        },
-        highlight: {
-          DEFAULT: "var(--highlight)",
-          subtle: "var(--highlight-subtle)",
-        },
+        border: "var(--clr-border)",
+        mid: "var(--clr-mid)",
+        muted: "var(--clr-muted)",
+        white: "var(--clr-white)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "Plus Jakarta Sans", "system-ui", "-apple-system", "sans-serif"],
-        heading: ["var(--font-heading)", "Outfit", "system-ui", "-apple-system", "sans-serif"],
-        display: ["var(--font-display)", "Space Grotesk", "sans-serif"],
-        mono: ["var(--font-mono)", "JetBrains Mono", "Courier New", "monospace"],
-      },
-      keyframes: {
-        equalizer1: {
-          "0%, 100%": { height: "20%" },
-          "50%": { height: "95%" },
-        },
-        equalizer2: {
-          "0%, 100%": { height: "70%" },
-          "50%": { height: "30%" },
-        },
-        equalizer3: {
-          "0%, 100%": { height: "40%" },
-          "50%": { height: "100%" },
-        },
-        equalizer4: {
-          "0%, 100%": { height: "85%" },
-          "50%": { height: "25%" },
-        },
-        pulseSubtle: {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.5" },
-        },
-        rankBar: {
-          from: { width: "0%" },
-          to: { width: "var(--bar-width)" },
-        },
-      },
-      animation: {
-        "eq-1": "equalizer1 1.2s ease-in-out infinite",
-        "eq-2": "equalizer2 0.9s ease-in-out infinite",
-        "eq-3": "equalizer3 1.4s ease-in-out infinite",
-        "eq-4": "equalizer4 1.1s ease-in-out infinite",
-        "pulse-subtle": "pulseSubtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        "rank-bar": "rankBar 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        display: ["var(--ff-display)", "Bebas Neue", "sans-serif"],
+        serif: ["var(--ff-serif)", "DM Serif Display", "serif"],
+        sans: ["var(--ff-body)", "DM Sans", "sans-serif"],
+        mono: ["var(--ff-mono)", "JetBrains Mono", "monospace"],
       },
     },
   },

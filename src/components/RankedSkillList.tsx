@@ -96,9 +96,9 @@ export function RankedSkillList({ limit, showFilters = true }: RankedSkillListPr
                 </span>
               </div>
 
-              {/* Scrobbles / Play Count on right */}
+              {/* Experience note on right */}
               <div className="sm:w-36 text-left sm:text-right flex-shrink-0 text-[11px] font-mono text-text-muted border-t sm:border-t-0 border-border/40 pt-1.5 sm:pt-0">
-                <span className="text-text font-medium">{skill.scrobbles}</span>
+                <span className="text-text font-medium">{skill.experience}</span>
               </div>
             </div>
           );

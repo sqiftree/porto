@@ -7,7 +7,7 @@ export function ThemeToggle() {
   const [theme, setTheme] = useState<"dark" | "light">("light");
 
   useEffect(() => {
-    // Check initial preference from localStorage
+    // Check initial preference from localStorage (Light is default per reference)
     const savedTheme = localStorage.getItem("yashif-theme") as "dark" | "light" | null;
     if (savedTheme === "dark") {
       setTheme("dark");
@@ -15,8 +15,8 @@ export function ThemeToggle() {
       document.documentElement.classList.remove("light");
     } else {
       setTheme("light");
-      document.documentElement.classList.remove("dark");
       document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
     }
   }, []);
 
@@ -37,14 +37,14 @@ export function ThemeToggle() {
     <button
       onClick={toggleTheme}
       type="button"
-      className="p-2 rounded-md border border-border bg-surface hover:bg-surface-hover text-text transition-colors flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-accent"
+      className="w-8 h-8 rounded border border-border bg-surface hover:border-gold text-mid hover:text-gold transition-colors flex items-center justify-center focus:outline-none"
       aria-label={`Ganti ke mode ${theme === "dark" ? "terang" : "gelap"}`}
       title={`Beralih ke mode ${theme === "dark" ? "terang" : "gelap"}`}
     >
       {theme === "dark" ? (
-        <Sun className="w-4 h-4 text-highlight" />
+        <Sun className="w-3.5 h-3.5 text-gold" />
       ) : (
-        <Moon className="w-4 h-4 text-accent" />
+        <Moon className="w-3.5 h-3.5 text-mid" />
       )}
     </button>
   );

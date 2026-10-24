@@ -1,30 +1,30 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Outfit, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Bebas_Neue, DM_Serif_Display, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const sans = Plus_Jakarta_Sans({
+const bebas = Bebas_Neue({
+  weight: "400",
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--ff-display",
   display: "swap",
 });
 
-const heading = Outfit({
+const dmSerif = DM_Serif_Display({
+  weight: "400",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-heading",
+  variable: "--ff-serif",
   display: "swap",
 });
 
-const display = Space_Grotesk({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-display",
+  variable: "--ff-body",
   display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--ff-mono",
   display: "swap",
 });
 
@@ -34,34 +34,24 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Yashif Victoriawan (@sqiftree) — Portofolio Rekayasa | Frontend & UAV Telemetry",
+  title: "Yashif Victoriawan — Portofolio Rekayasa | Frontend & UAV Telemetry",
   description:
-    "Portofolio rekayasa personal Yashif Victoriawan (@sqiftree). Mahasiswa S1 Informatika UNS '24, Programmer GCS di Bengawan UV Team, dan Frontend Developer.",
+    "Portofolio rekayasa Yashif Victoriawan (@sqiftree). Mahasiswa S1 Informatika UNS '24, Programmer GCS di Bengawan UV Team (Tim Narash BUV).",
   keywords: [
     "Yashif Victoriawan",
     "sqiftree",
     "Informatika UNS",
     "Bengawan UV Team",
     "Narash BUV",
-    "KRTI 2026",
     "Frontend Engineer",
-    "QA Engineer",
-    "UAV Ground Control Station",
+    "Ground Control Station",
     "MAVLink",
     "Next.js",
-    "TypeScript",
-    "Tailwind CSS"
+    "TypeScript"
   ],
   authors: [{ name: "Yashif Victoriawan", url: "https://github.com/sqiftree" }],
   icons: {
     icon: "/favicon.svg",
-  },
-  openGraph: {
-    title: "Yashif Victoriawan (@sqiftree) — Portofolio Rekayasa",
-    description:
-      "Portofolio rekayasa personal Yashif Victoriawan (@sqiftree). Mahasiswa S1 Informatika UNS '24, Programmer GCS di Bengawan UV Team, dan Frontend Developer.",
-    type: "website",
-    locale: "id_ID",
   },
 };
 
@@ -71,24 +61,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className="dark" suppressHydrationWarning>
+    <html lang="id" className="light" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               try {
                 const savedTheme = localStorage.getItem('yashif-theme');
-                if (savedTheme === 'light') {
-                  document.documentElement.classList.add('light');
-                  document.documentElement.classList.remove('dark');
-                } else {
+                if (savedTheme === 'dark') {
                   document.documentElement.classList.add('dark');
                   document.documentElement.classList.remove('light');
-                }
-
-                const savedAccent = localStorage.getItem('yashif-accent');
-                if (savedAccent) {
-                  document.documentElement.setAttribute('data-accent', savedAccent);
+                } else {
+                  document.documentElement.classList.add('light');
+                  document.documentElement.classList.remove('dark');
                 }
               } catch (_) {}
             `,
@@ -96,7 +81,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${sans.variable} ${heading.variable} ${display.variable} ${jetbrainsMono.variable} antialiased min-h-screen bg-bg text-text selection:bg-accent selection:text-white font-sans`}
+        className={`${bebas.variable} ${dmSerif.variable} ${dmSans.variable} ${jetbrainsMono.variable} antialiased min-h-screen`}
       >
         {children}
       </body>

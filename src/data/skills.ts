@@ -84,3 +84,18 @@ export const topSkillsData: RankedSkill[] = [
 ];
 
 export const skillCategories = ["All", "Frontend & Web", "Systems & UAV", "QA & Testing", "Languages & Tools"] as const;
+
+export interface StandStat {
+  axis: string;
+  value: number; // 0 - 5
+  fullMark: number;
+}
+
+export const standStatsData: StandStat[] = [
+  { axis: "FRONTEND", value: 4, fullMark: 5 },
+  { axis: "TELEMETRY / UAV", value: 3, fullMark: 5 },
+  { axis: "BACKEND & DATA", value: 2, fullMark: 5 },
+  { axis: "MOBILE", value: 2, fullMark: 5 },
+  { axis: "RELIABILITY", value: 3, fullMark: 5 },
+  { axis: "GROWTH POTENTIAL", value: 5, fullMark: 5 },
+];
